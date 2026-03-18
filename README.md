@@ -48,6 +48,28 @@ brew install curl jq
 
 ---
 
+## Getting Your Access Token
+
+The script authenticates using a long-lived Qualys Access Token generated from the **Container Security (CS)** module in the Qualys Enterprise TruRisk Platform.
+
+To generate your token:
+
+1. Log in to the **Qualys Platform** at your subscription URL
+2. Navigate to the **CS (Container Security)** module from the top-left module picker
+3. Go to **Configurations** in the left sidebar
+4. Click the **Access Token** tab (alongside Sensors, Sensor Profiles, Integrations, etc.)
+5. Under the **LINUX** section, you will see the `export QUALYS_ACCESS_TOKEN=eyJ...` command
+6. Click **COPY** to copy the full token to your clipboard
+7. Paste it into your terminal:
+
+```bash
+export QUALYS_ACCESS_TOKEN="eyJ..."
+```
+
+> **Note:** This is a long-lived token specific to your Qualys subscription. Keep it secure — do not commit it to source control or share it in plain text. Store it in a secrets manager (Vault, AWS Secrets Manager, etc.) for production use.
+
+---
+
 ## Quick Start
 
 ```bash
