@@ -1,4 +1,4 @@
-# Qualys Container Security — Image Fetcher
+# Qualys Container Security - Image Fetcher
 
 Enterprise-grade CLI tool that pulls **every container image record** from a Qualys CSAPI gateway with automatic pagination, full rate-limit handling, resume capability, and structured reporting.
 
@@ -74,8 +74,8 @@ export QUALYS_ACCESS_TOKEN="eyJ..."
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Qualys/qualys-image-fetcher.git
-cd qualys-image-fetcher
+git clone https://github.com/amanjangid26/qualys_image_fetcher.git
+cd qualys_image_fetcher
 
 # 2. Make executable
 chmod +x qualys_image_fetcher.sh
